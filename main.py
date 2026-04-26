@@ -27,7 +27,7 @@ def add_task(tasks):
 
 def delete_task(tasks):
     show_tasks(tasks)
-    num = int(input("Enter task number to delete: ")) - 1
+    num = int(input("Enter task number to delete: ")) 
     if 0 <= num < len(tasks):
         tasks.pop(num)
         save_tasks(tasks)
